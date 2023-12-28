@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEBDATA</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+        th
+        {
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1><u>WEBPAGE_DATA</u></h1>
+        <table border="2px" cellspacing="5px" cellpadding="5px">
+            <tr>
+                <th>TOPIC_NAME</th>
+                <th>NAME</th>
+                <th>URL</th>
+            </tr>
+            {% for wo in webpage %}
+                <tr>
+                    <td>{{wo.topic_name}}</td>
+                    <td>{{wo.name}}</td>
+                    <td>{{wo.url}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

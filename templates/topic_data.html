@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TOPICDATA</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+        th
+        {
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1><u>Topic_DATA</u></h1>
+        <table border="2px" cellspacing="5px" cellpadding="5px">
+            <tr>
+                <th>TOPIC_NAME</th>
+            </tr>
+            {% for to in topic %}
+                <tr>
+                    <td>{{to.topic_name}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
